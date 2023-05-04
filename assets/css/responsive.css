@@ -1,0 +1,88 @@
+/* X-Large devices (large desktops, 1200px to 1400px) */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.contents-area {
+		padding: 0 15px 55px 15px;
+	}
+	.database-tab li {
+		margin-right: 10px;
+	}
+	.database-tab li button {
+		padding: 15px 0;
+	}
+	.table-topbar .records-tab li {
+		margin-right: 10px;
+	}
+	.table-topbar .records-tab {
+		margin-bottom: 30px;
+	}
+	.main-container .sidebar-area {
+		width: 280px;
+		padding: 30px 10px 25px 10px;
+	}
+	.main-container .contents-area {
+		margin-left: 280px;
+		width: calc(100% - 280px);
+	}
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.contents-area {
+		padding: 0 15px 55px 15px;
+	}
+	.database-tab li {
+		margin-right: 10px;
+	}
+	.database-tab li button {
+		padding: 15px 0;
+	}
+	.table-topbar .records-tab li {
+		margin-right: 10px;
+	}
+	.table-topbar .records-tab {
+		margin-bottom: 30px;
+	}
+}
+
+/* X-Small devices (small mobile) (portrait phones, less than 767px) */
+@media only screen and (max-width: 767px) {
+	.main-container {
+		overflow: hidden;
+	}
+	.main-container .sidebar-area {
+		width: 100%;
+		position: relative;
+		height: auto;
+	}
+
+	.main-container .contents-area {
+		width: 100%;
+		margin-left: 0;
+	}
+	.contents-area {
+		padding: 0 15px 55px 15px;
+	}
+	.database-tab li {
+		margin-right: 10px;
+	}
+	.database-tab li button {
+		padding: 15px 0;
+	}
+	.table-topbar .records-tab li {
+		margin-right: 10px;
+	}
+	.table-topbar .records-tab {
+		margin-bottom: 30px;
+	}
+	.filter-title .add-search-field .field-parent {
+		width: 150px;
+	}
+}
+
+/* Small devices (large mobile) (landscape phones, 480px to 767px) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
