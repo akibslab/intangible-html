@@ -686,19 +686,11 @@ tr.collapese-content .collapse-tab li:hover {
 	align-items: center;
 	justify-content: end;
 	margin-bottom: 20px;
-}
-.contents-area
-	.table-area
-	tbody
-	tr.collapese-content
-	.dempe
-	.collapse-right-content {
-	justify-content: start;
-	margin-left: 270px;
+	margin-top: -43px;
 }
 .collapese-content .collapse-right-content select {
 	width: 140px;
-	height: 35px;
+	height: 30px;
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	border-color: var(--color-primary);
