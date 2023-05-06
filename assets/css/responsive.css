@@ -46,6 +46,10 @@
 	.table-topbar .records-tab {
 		margin-bottom: 30px;
 	}
+	.contents-area .table-area tr td:first-child,
+	.contents-area .table-area th:nth-child(1) {
+		padding-left: 22px;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
@@ -80,6 +84,10 @@
 	}
 	.filter-title .add-search-field .field-parent {
 		width: 150px;
+	}
+	.contents-area .table-area tr td:first-child,
+	.contents-area .table-area th:nth-child(1) {
+		padding-left: 22px;
 	}
 }
 

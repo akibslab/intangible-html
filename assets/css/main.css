@@ -408,6 +408,9 @@ textarea:focus {
 	border-radius: 100%;
 	-webkit-tap-highlight-color: transparent;
 }
+.table .radio-item .label {
+	margin-right: 0;
+}
 .radio-item .label:after {
 	content: "";
 	position: absolute;
@@ -593,7 +596,8 @@ table thead tr::before {
 }
 .contents-area .table-area tr td:first-child {
 	padding: 0.8rem 0.5rem;
-	text-align: center;
+	text-align: right;
+	width: 50px;
 }
 .contents-area .table-area tbody tr.collapese-content {
 	background-color: #f3f5f7;
@@ -601,7 +605,7 @@ table thead tr::before {
 	display: none;
 }
 .contents-area .table-area tbody tr.collapese-content:hover {
-	background-color: #f3f5f7 !important;
+	background: transparent;
 }
 .contents-area .table-area tbody tr.collapese-content::before {
 	background-image: none;
@@ -679,11 +683,30 @@ tr.collapese-content .collapse-tab li:hover {
 }
 .contents-area .table-area tbody tr.collapese-content .collapse-right-content {
 	display: flex;
-	width: calc(100% - 70%);
 	align-items: center;
 	justify-content: end;
+	margin-bottom: 20px;
 }
-
+.contents-area
+	.table-area
+	tbody
+	tr.collapese-content
+	.dempe
+	.collapse-right-content {
+	justify-content: start;
+	margin-left: 270px;
+}
+.collapese-content .collapse-right-content select {
+	width: 140px;
+	height: 35px;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border-color: var(--color-primary);
+	padding: 3px 5px;
+}
+.tab-content.document .collapse-right-content {
+	margin-bottom: 20px;
+}
 tr.collapese-content .collapse-right-content .eye-download span {
 	display: inline-block;
 	margin-left: 10px;
@@ -738,10 +761,10 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	top: 50%;
 	margin-top: -5px;
 }
-
 .contents-area .table-area th:nth-child(1) {
 	padding-right: 0.5rem;
-	text-align: center;
+	text-align: right;
+	width: 50px;
 }
 
 .contents-area .table-area th:nth-child(2) {
@@ -1217,4 +1240,42 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 
 .text-modal .text-modal-body > p:last-child {
 	margin-bottom: 0;
+}
+.tab-content .clauses .documents_wrap table {
+	width: 100%;
+}
+
+.tab-content .clauses .documents_wrap table thead {
+	border-bottom: 2px solid var(--color-secondary);
+}
+.tab-content .clauses .documents_wrap table thead tr:hover,
+.tab-content .clauses .documents_wrap table tbody tr:hover {
+	background: transparent;
+}
+.tab-content .clauses .documents_wrap table thead tr::before,
+.tab-content .clauses .documents_wrap table tbody tr::before {
+	display: none;
+}
+
+.tab-content .clauses .documents_wrap table thead tr th:not(:last-child),
+.tab-content .clauses .documents_wrap table tbody tr td:not(:last-child) {
+	width: 130px;
+	text-align: left;
+}
+.tab-content .clauses .documents_wrap table thead tr th,
+.tab-content .clauses .documents_wrap table tbody tr td {
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--color-primary);
+}
+.tab-content .clauses .documents_wrap table tbody tr td {
+	font-weight: 400;
+}
+.tab-content .clauses .documents_wrap table thead tr th,
+.tab-content .clauses .documents_wrap table tbody tr td {
+	padding-left: 0;
+}
+.tab-content .clauses .documents_wrap table thead tr th:nth-child(3)::after,
+.tab-content .clauses .documents_wrap table thead tr th:nth-child(4)::after {
+	display: none;
 }
