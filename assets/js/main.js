@@ -115,4 +115,8 @@
 				accordionRow.slideToggle("slow");
 			});
 	}
+
+	$(document).ready(function () {
+		$("select").niceSelect();
+	});
 })(jQuery);
