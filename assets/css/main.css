@@ -41,7 +41,7 @@ body {
 	padding: 0px;
 	box-sizing: border-box;
 }
-.img {
+img {
 	max-width: 100%;
 	transition: all 0.3s ease-out 0s;
 }
@@ -700,6 +700,7 @@ tr.collapese-content .collapse-right-content .eye-download span {
 }
 tr.collapese-content .collapse-right-content .eye-download span a {
 	max-width: 17px;
+	display: inline-block;
 }
 .collapse-heading {
 	display: flex;
