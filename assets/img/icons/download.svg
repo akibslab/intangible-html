@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="0 -1 471.2 436.7" width="471.2" height="436.7">
+  <defs/>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke-dasharray="none" stroke-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_2">
+        <g id="Group_3">
+          <g id="Graphic_5">
+            <path d="M 457.7 211.9 C 450.2 211.9 444.2 217.9 444.2 225.4 L 444.2 348.2 C 444.2 381.6 417 408.7 383.7 408.7 L 87.5 408.7 C 54.1 408.7 27 381.5 27 348.2 L 27 223.4 C 27 215.9 21 209.9 13.5 209.9 C 6 209.9 0 215.9 0 223.4 L 0 348.2 C 0 396.5 39.3 435.7 87.5 435.7 L 383.7 435.7 C 432 435.7 471.2 396.4 471.2 348.2 L 471.2 225.4 C 471.2 218 465.2 211.9 457.7 211.9 Z" fill="#01abff"/>
+          </g>
+          <g id="Graphic_4">
+            <path d="M 226.1 328.5 C 228.7 331.1 232.2 332.5 235.6 332.5 C 239 332.5 242.5 331.2 245.1 328.5 L 330.9 242.7 C 336.2 237.4 336.2 228.9 330.9 223.6 C 325.6 218.3 317.1 218.3 311.8 223.6 L 249.1 286.4 L 249.1 12.5 C 249.1 5 243.1 -1 235.6 -1 C 228.1 -1 222.1 5 222.1 12.5 L 222.1 286.4 L 159.3 223.6 C 154 218.3 145.5 218.3 140.2 223.6 C 134.9 228.9 134.9 237.4 140.2 242.7 Z" fill="#01abff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -698,28 +698,35 @@ tr.collapese-content .collapse-right-content .eye-download span {
 	display: inline-block;
 	margin-left: 10px;
 }
-
+tr.collapese-content .collapse-right-content .eye-download span a {
+	max-width: 17px;
+}
 .collapse-heading {
 	display: flex;
 	align-items: center;
 }
-
 tr.collapese-content .collapse-right-content .paginations {
 	display: flex;
 	align-items: center;
-	margin-right: 10px;
+	margin-right: 6px;
+	border: 1px solid var(--color-primary);
 }
-
+tr.collapese-content .collapse-right-content .paginations li:not(:last-child) {
+	border-right: 1px solid var(--color-primary);
+}
 tr.collapese-content .collapse-right-content .paginations li > a {
 	font-size: 12px;
-	line-height: 1;
-	border: 1px solid var(--color-primary);
 	height: 23px;
+	min-width: 23px;
+	text-align: center;
+	line-height: 23px;
 	display: block;
-	padding: 5px;
 	background-color: var(--color-white);
 	color: var(--color-primary);
 	font-weight: 700;
+}
+tr.collapese-content .collapse-right-content .paginations li.active > a {
+	padding: 0 6px;
 }
 
 tr.collapese-content .collapse-right-content .paginations li.active > a,
