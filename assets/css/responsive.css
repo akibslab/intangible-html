@@ -1,5 +1,49 @@
 /* X-Large devices (large desktops, 1200px to 1400px) */
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1500px) and (max-width: 1700px) {
+	.statistics_wrapper .statistics_content {
+		padding: 45px 25px;
+		gap: 30px;
+	}
+	.statistics_returns {
+		margin-left: 0;
+		max-width: 460px;
+	}
+	.statistics_content .statistics_analytics {
+		width: calc(100% - 615px);
+	}
+}
+/* X-Large devices (large desktops, 1200px to 1400px) */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+	.statistics_wrapper .statistics_header {
+		padding: 25px 30px;
+	}
+	.statistics_wrapper .statistics_header .header_title {
+		font-size: 75px;
+	}
+	.statistics_wrapper .statistics_content {
+		padding: 45px 25px;
+		gap: 30px;
+	}
+	.statistics_returns {
+		margin-left: 0;
+		max-width: 350px;
+	}
+	.statistics_returns .returns_title {
+		font-size: 25px;
+	}
+	.statistics_returns .returns_title img {
+		left: 15px;
+		width: 20px;
+	}
+	.statistics_returns .returns_infos ul li {
+		font-size: 20px;
+	}
+	.statistics_content .statistics_analytics {
+		width: calc(100% - 505px);
+	}
+	.statistics_analytics_tabs .nav-item {
+		font-size: 18px;
+	}
 }
 
 /* Large devices (desktops, 992px to 1199px) */

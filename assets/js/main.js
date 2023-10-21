@@ -55,6 +55,18 @@
 			});
 	});
 
+	// statistics filter
+	$(".statistics_score_wrap button").on("click", function () {
+		$(this).siblings().removeClass("active");
+		$(this).addClass("active");
+	});
+
+	// statistics returns
+	$(".statistics_returns .returns_title").on("click", function () {
+		$(this).toggleClass("active");
+		$(this).next(".returns_infos").slideToggle();
+	});
+
 	// Table click sorting
 	$(document).on(
 		"click",
