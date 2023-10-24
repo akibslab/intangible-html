@@ -1282,11 +1282,11 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 40px 70px;
+	padding: 20px 50px;
 }
 .statistics_wrapper .statistics_header .header_title {
 	margin-bottom: 0;
-	font-size: 100px;
+	font-size: 35px;
 	font-weight: 600;
 	color: var(--color-white);
 }
@@ -1300,14 +1300,15 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 }
 .statistics_wrapper .statistics_content {
 	background-color: var(--color-white);
-	padding: 45px 45px 35px 70px;
+	padding: 25px 40px 25px 50px;
 	border-bottom: 9px solid var(--color-secondary);
 	display: flex;
 	flex-wrap: wrap;
+	height: 100%;
 	gap: 60px;
 }
 .statistics_content .statistics_filter {
-	max-width: 95px;
+	max-width: 65px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -1321,26 +1322,26 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	margin-bottom: 30px;
 }
 .statistics_score .title {
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.2;
 	font-weight: 500;
 	color: var(--color-primary);
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .statistics_score button {
-	width: 93px;
-	height: 65px;
+	width: 65px;
+	height: 40px;
 	border: 2px solid var(--color-secondary);
 	border-radius: 3px;
 	background-color: var(--color-white);
-	font-size: 25px;
+	font-size: 15px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: var(--color-secondary);
 	line-height: 1;
 	position: relative;
 	z-index: 1;
-	margin: 17px 0;
+	margin: 10px 0;
 	transition: all 0.3s ease-in-out;
 }
 .statistics_score button.active {
@@ -1356,9 +1357,9 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	content: "";
 	position: absolute;
 	left: 50%;
-	bottom: -14px;
-	width: 25px;
-	height: 25px;
+	bottom: -9px;
+	width: 15px;
+	height: 15px;
 	background-color: var(--color-white);
 	border-left: 2px solid var(--color-secondary);
 	border-bottom: 2px solid var(--color-secondary);
@@ -1368,7 +1369,7 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 }
 .statistics_score button::after {
 	bottom: auto;
-	top: -14px;
+	top: -9px;
 	transform: translateX(-50%) rotate(135deg);
 }
 .statistics_score button:first-child::after {
@@ -1380,7 +1381,7 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 .statistics_score .statistics_score_wrap {
 	position: relative;
 	z-index: 1;
-	padding: 15px 0;
+	padding: 10px 0;
 }
 .statistics_score .statistics_score_wrap::before {
 	content: "";
@@ -1397,12 +1398,13 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	max-width: 500px;
 	width: 100%;
 	margin-left: 20px;
+	background-color: var(--color-bg);
 }
 .statistics_returns .returns_title {
 	background-color: var(--color-secondary);
 	color: var(--color-white);
 	font-weight: 500;
-	font-size: 37px;
+	font-size: 25px;
 	width: 100%;
 	text-align: center;
 	cursor: pointer;
@@ -1422,7 +1424,7 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	transform: translateY(-50%) rotate(180deg);
 }
 .statistics_returns .returns_infos ul li {
-	font-size: 29px;
+	font-size: 20px;
 	line-height: 1.1;
 	font-weight: 400;
 	color: var(--color-primary);
@@ -1430,6 +1432,7 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	background-color: var(--color-white);
 }
 .statistics_returns .returns_infos ul li .key {
 	background-color: var(--color-bg);
@@ -1457,6 +1460,7 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 }
 .statistics_content .statistics_analytics {
 	width: calc(100% - 735px);
+	background-color: var(--color-bg);
 }
 .statistics_analytics_tabs {
 	display: flex;
@@ -1468,7 +1472,7 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 .statistics_analytics_tabs .nav-item {
 	background-color: var(--color-secondary);
 	color: var(--color-white);
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 500;
 	line-height: 1;
 	display: inline-flex;
@@ -1482,11 +1486,10 @@ tr.collapese-content .collapse-right-content .paginations li:hover > a {
 	cursor: pointer;
 }
 .statistics_analytics_tabs .nav-item.active {
-	background-color: transparent;
+	background-color: var(--color-white);
 	color: var(--color-primary);
 }
 .statistics_analytics_tab_content {
-	background-color: var(--color-bg);
 	padding: 30px 20px;
 }
 /* end: Statistics Section */
