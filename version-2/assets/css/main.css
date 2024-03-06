@@ -160,6 +160,7 @@
 	margin: 0;
 	position: relative;
 	padding-left: 23px;
+	cursor: pointer;
 }
 .radio input[type="radio"] {
 	display: none;
