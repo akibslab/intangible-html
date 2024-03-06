@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+
+  <!-- Site Title -->
+  <title>IntangibleSpring</title>
+
+  <!-- Favicon -->
+  <link rel="website icon" type="svg" href="assets/img/icon.svg" />
+
+  <!-- CSS	   
+  ============================================ -->
+  <!-- Bootstrap.css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!-- fontawesome.css -->
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Responsive.css -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+</head>
+
+<body>
+
+  <main class="site-content text-center mt-5">
+
+    <!-- Formatting Modal -->
+    <!-- modal button -->
+    <button type="button" class="btn formatting_btn" data-bs-toggle="modal" data-bs-target="#formattingModal">
+      Formatting<img src="./assets/img/icons/funnel.svg" alt="">
+    </button>
+
+    <!-- modal content -->
+    <div class="modal fade formatting_modal" id="formattingModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal_header">
+            <h3 class="modal_title">Standardize Result Formats</h3>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><img
+                src="./assets/img/icons/close-black.svg" alt=""></button>
+          </div>
+
+          <div class="modal_body">
+            <div class="body_header">
+              <span class="tab update">Update</span>
+              <span class="tab reset">Reset</span>
+            </div>
+
+
+            <div class="body_content">
+              <form action="#">
+                <div class="form_group">
+                  <label for="area">Select unit for Area (sq ft/m2)</label>
+                  <select name="area" id="area">
+                    <option value="">Square Meters</option>
+                    <option value="100">100 sq ft</option>
+                    <option value="200">200 sq ft</option>
+                    <option value="300">300 sq ft</option>
+                    <option value="400">400 sq ft</option>
+                    <option value="500">500 sq ft</option>
+                  </select>
+                </div>
+                <div class="form_group">
+                  <label for="frequencry">Rent Frequency</label>
+                  <div class="radio">
+                    <input type="radio" name="frequencry" id="Annual" checked>
+                    <label for="Annual">Annual</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="frequencry" id="Monthly">
+                    <label for="Monthly">Monthly</label>
+                  </div>
+                </div>
+                <div class="form_group">
+                  <label for="currency">Currency</label>
+                  <select name="currency" id="currency">
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPYt</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: Formatting Modal -->
+
+  </main>
+
+  <!-- JS
+    ============================================ -->
+  <!-- Jquery js -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- NiceSelect -->
+  <script src="assets/js/nice-select.js"></script>
+
+  <!-- Main -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
