@@ -148,6 +148,11 @@
 	border-bottom: 1.6px solid #464f58;
 	border-right: 1.6px solid #464f58;
 }
+.formatting_modal .body_content .form_group .nice-select .list {
+	max-height: 150px;
+	overflow-y: auto;
+	margin-bottom: 0;
+}
 .formatting_modal .body_content .form_group .radio:not(:last-child) {
 	margin-right: 30px;
 }
