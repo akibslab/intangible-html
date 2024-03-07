@@ -102,6 +102,99 @@
     </div>
     <!-- end: Formatting Modal -->
 
+    <!-- Formatting Modal -->
+    <!-- modal button -->
+    <button type="button" class="filter_btn active" data-bs-toggle="modal" data-bs-target="#onDemandModal">
+      On Demand
+    </button>
+
+    <!-- modal content -->
+    <div class="modal fade on_demand_modal" id="onDemandModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><img
+              src="./assets/img/icons/close-white.svg" alt=""></button>
+
+          <div class="modal_header">
+            <h3 class="modal_title">Your Custom Search</h3>
+          </div>
+
+          <div class="modal_body">
+            <form action="#">
+              <div class="top_fields">
+                <div class="form_group">
+                  <label for="Company">Company</label>
+                  <input type="text" name="Company" id="Company" placeholder="Company Name">
+                </div>
+                <div class="form_group">
+                  <label for="name">Full Name</label>
+                  <input type="text" name="name" id="name" placeholder="Name Surname">
+                </div>
+                <div class="form_group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Business Email Address">
+                </div>
+              </div>
+
+              <div class="filter_buttons">
+                <button class="filter_btn active">Royalty Rates</button>
+                <button class="filter_btn">Service fees</button>
+                <button class="filter_btn">Lease Rates</button>
+              </div>
+
+              <div class="middle_fields">
+                <div class="form_group">
+                  <label for="Industry">Industry</label>
+                  <select name="Industry" id="Industry">
+                    <option value="Medical">Medical</option>
+                    <option value="Medical">Medical 1</option>
+                    <option value="Medical">Medical 2</option>
+                    <option value="Medical">Medical 3</option>
+                  </select>
+                </div>
+                <div class="form_group">
+                  <label for="typeIp">Type of IP</label>
+                  <select name="typeIp" id="typeIp">
+                    <option value="Medical">Medical</option>
+                    <option value="Medical">Medical 1</option>
+                    <option value="Medical">Medical 2</option>
+                    <option value="Medical">Medical 3</option>
+                  </select>
+                </div>
+                <div class="form_group">
+                  <label for="Base">Base</label>
+                  <select name="Base" id="Base">
+                    <option value="Medical">Medical</option>
+                    <option value="Medical">Medical 1</option>
+                    <option value="Medical">Medical 2</option>
+                    <option value="Medical">Medical 3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="bottom_fields">
+                <div class="form_group">
+                  <label for="Keywords">Keywords</label>
+                  <input type="text" name="Keywords" id="Keywords" placeholder="Enter text">
+                </div>
+                <div class="form_group textarea">
+                  <label for="comments">Product Details/ Comments</label>
+                  <textarea name="comments" id="comments" placeholder="Enter text"></textarea>
+                </div>
+              </div>
+
+              <div class="form_button">
+                <button type="submit">Launch Request</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: Formatting Modal -->
+
   </main>
 
   <!-- JS
