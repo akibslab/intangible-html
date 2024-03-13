@@ -1,0 +1,176 @@
+/* 24x24 px */
+.icon-24 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	padding: 2px;
+}
+
+/* 20x20 px */
+.icon-20 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+}
+
+/* 18x18 px */
+.icon-18 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	padding: 2px;
+}
+
+/* checkbox */
+.form_group {
+	display: block;
+}
+.form_group input {
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+.form_group label {
+	position: relative;
+	cursor: pointer;
+	line-height: 1;
+}
+.form_group label:before {
+	content: "";
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: 1px solid #4ca8f8;
+	padding: 9px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.form_group input:checked + label::before {
+	background-color: #4ca8f8;
+}
+.form_group input:checked + label:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 7px;
+	width: 6px;
+	height: 13px;
+	border: solid #ffffff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+/* Project Filter */
+.project_list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.project_list .project {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	max-width: 225px;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 13px 10px;
+	color: #000000;
+
+	font-family: "Inter";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0em;
+	text-align: left;
+	transition: all 0.3s ease-in-out 0s;
+}
+.project_list .project span {
+	display: inline-block;
+	max-width: 135px;
+	width: 100%;
+}
+.project_list .project a {
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+.project_list .project:hover,
+.project_list .project.active {
+	background-color: #e8e8e8;
+}
+.project_list .project:hover a,
+.project_list .project.active a {
+	visibility: visible;
+	opacity: 1;
+}
+
+.project_filter {
+	max-width: 225px;
+	width: 100%;
+	position: relative;
+}
+.project_filter:before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/components/icons/arrow-down.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 18px;
+	height: 18px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease-in-out 0s;
+}
+.project_filter.open:before {
+	transform: rotate(180deg) translateY(50%);
+}
+
+.project_filter .activated {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: #ffffff;
+	font-family: "Inter";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #000000;
+	border-radius: 6px;
+	padding: 10px;
+	cursor: pointer;
+}
+.project_filter .activated a {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.project_filter > .project_items {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	margin-top: 8px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	overflow: hidden;
+	display: none;
+}
