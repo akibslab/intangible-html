@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #cccccc;">
 
   <main class="site-content mt-5">
 
@@ -44,7 +44,7 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-4">
-            <div class="icons bg-secondary p-4">
+            <div class="components p-4">
               <h4 class="mb-3">24x24 px</h4>
 
               <div class="icons_wrap d-flex flex-wrap gap-3">
@@ -61,7 +61,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
-            <div class="icons bg-light p-4">
+            <div class="components p-4">
               <h4 class="mb-3">20x20 px</h4>
 
               <div class="icons_wrap d-flex flex-wrap gap-3">
@@ -85,7 +85,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
-            <div class="arrows bg-light p-4">
+            <div class="components p-4">
               <h4 class="mb-3">18x18 px</h4>
 
               <div class="icons_wrap d-flex flex-wrap gap-3">
@@ -104,7 +104,7 @@
 
               </div>
             </div>
-            <div class="arrows bg-light p-4">
+            <div class="components p-4">
               <h4 class="mb-3">20x20 px</h4>
 
               <div class="icons_wrap d-flex flex-wrap gap-3">
@@ -119,15 +119,15 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
-            <div class="icons bg-light p-4">
+            <div class="components p-4">
               <h4 class="mb-3">Checkbox</h4>
 
               <div class="icons_wrap d-flex flex-column flex-wrap gap-3">
-                <div class="form_group">
+                <div class="checkbox_group">
                   <input type="checkbox" name="checkbox1" id="checkbox1">
                   <label for="checkbox1"></label>
                 </div>
-                <div class="form_group">
+                <div class="checkbox_group">
                   <input type="checkbox" name="checkbox2" id="checkbox2" checked>
                   <label for="checkbox2"></label>
                 </div>
@@ -135,13 +135,12 @@
             </div>
           </div>
         </div>
-
         <div class="row">
-          <div class="col-lg-3">
-            <div class="project_filters bg-secondary p-4">
+          <div class="col-lg-3 col-md-4">
+            <div class="components p-4">
               <h4 class="mb-3">Project filter</h4>
 
-              <ul class="project_list mb-3">
+              <ul class="project_list mb-4">
                 <li class="project">
                   <span>Project 1</span>
                   <a href="#" class="icon-20">
@@ -203,7 +202,126 @@
               </div>
 
             </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="components p-4">
+              <h4 class="mb-3">Sorting tab</h4>
+              <div class="components_wrap d-flex align-items-center gap-3">
+                <div class="sorting_tab">Update</div>
+                <div class="sorting_tab active">Update</div>
+              </div>
+            </div>
 
+            <div class="components p-4">
+              <h4 class="mb-3">Radio Box</h4>
+
+              <div class="radiobox d-flex align-items-center gap-4">
+                <div class="radiobox_group">
+                  <input type="radio" name="radio" id="checkbox4">
+                  <label for="checkbox4">Checkbox</label>
+                </div>
+                <div class="radiobox_group">
+                  <input type="radio" name="radio" id="checkbox3" checked>
+                  <label for="checkbox3">Checkbox</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8">
+            <div class="components p-4">
+              <h4 class="mb-3">Step Progress</h4>
+
+              <div class="progress_step">
+                <span class="label">Search Results</span>
+                <span class="dot"></span>
+              </div>
+              <div class="progress_step current">
+                <span class="label">Search Results</span>
+                <span class="dot"></span>
+              </div>
+              <div class="progress_step done">
+                <span class="label">Search Results</span>
+                <span class="dot"></span>
+              </div>
+
+
+              <h4 class="mt-4 mb-3">Progress bar</h4>
+
+              <div class="progress_bar">
+                <div class="progress_step done">
+                  <span class="label">Search Results</span>
+                  <span class="dot"></span>
+                </div>
+                <div class="progress_step done">
+                  <span class="label">Search Results</span>
+                  <span class="dot"></span>
+                </div>
+                <div class="progress_step current">
+                  <span class="label">Search Results</span>
+                  <span class="dot"></span>
+                </div>
+                <div class="progress_step">
+                  <span class="label">Search Results</span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="components p-4">
+              <h4 class="mb-3">IP Type filter</h4>
+
+
+              <ul class="ip_list">
+                <li class="ip">
+                  <span>Franchise</span>
+                  <a href="#" class="icon-18">
+                    <img src="./assets/img/components/icons/delete-primary.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+
+
+              <div class="project_filter mt-4">
+                <span class="activated"></span>
+
+                <div class="project_items">
+                  <ul class="project_list">
+                    <li class="project">
+                      <span>Project 1</span>
+                      <a href="#" class="icon-20">
+                        <img src="./assets/img/components/icons/pencil.svg" alt="">
+                      </a>
+                      <a href="#" class="icon-20">
+                        <img src="./assets/img/components/icons/delete.svg" alt="">
+                      </a>
+                    </li>
+                    <li class="project">
+                      <span>Project 2</span>
+                      <a href="#" class="icon-20">
+                        <img src="./assets/img/components/icons/pencil.svg" alt="">
+                      </a>
+                      <a href="#" class="icon-20">
+                        <img src="./assets/img/components/icons/delete.svg" alt="">
+                      </a>
+                    </li>
+                    <li class="project">
+                      <span>Project 3</span>
+                      <a href="#" class="icon-20">
+                        <img src="./assets/img/components/icons/pencil.svg" alt="">
+                      </a>
+                      <a href="#" class="icon-20">
+                        <img src="./assets/img/components/icons/delete.svg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
