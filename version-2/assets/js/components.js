@@ -1,22 +1,50 @@
 (function ($) {
 	"use strict";
 
-	// project filter
 	$(document).ready(function () {
-		// header language
-		$(".project_filter .activated").html($(".project_list > .project").html());
+		// item filter
+		$(".item_filter").each(function () {
+			var filter = $(this);
+			var projects = $(this).find(".items_list > .item").html();
 
-		var newOptions = $(".project_list > .project");
+			filter.find(".activated").html(projects);
+		});
+
+		var newOptions = $(".items_list > .item");
 		newOptions.click(function () {
-			$(".project_filter .activated").html($(this).html());
-			$(".project_list > .project").siblings().removeClass("active");
+			$(this).parents(".item_filter").find(".activated").html($(this).html());
+			$(this).siblings().removeClass("active");
 			$(this).addClass("active");
 		});
 
-		var aeDropdown = $(".project_filter");
+		var aeDropdown = $(".item_filter");
 		aeDropdown.click(function () {
-			$(".project_items").slideToggle();
+			$(this).find(".filter_items").slideToggle();
 			$(this).toggleClass("open");
+		});
+
+		// filter type
+		$(".filter_type .heading").on("click", function () {
+			$(this).parents(".filter_type").toggleClass("active");
+			$(this).parents(".filter_type").find(".type_content").slideToggle();
+		});
+	});
+
+	$(document).ready(function () {
+		$("input[type='checkbox']").each(function () {
+			if ($(this).is(":checked")) {
+				$(this).parents(".checkbox_group").addClass("checked");
+			}
+		});
+
+		$("input[type='checkbox']").change(function () {
+			if (this.checked) {
+				// Add a class to the parent div with the class 'fee_setting'
+				$(this).parents(".checkbox_group").addClass("checked");
+			} else {
+				// Remove the class if the checkbox is unchecked
+				$(this).parents(".checkbox_group").removeClass("checked");
+			}
 		});
 	});
 })(jQuery);
