@@ -131,4 +131,88 @@
 	$(document).ready(function () {
 		$("select").niceSelect();
 	});
+
+	// statistics page
+	$(document).ready(function () {
+		// Statistics Tab
+		$('#statisticsTab li[data-bs-toggle="pill"]').on(
+			"show.bs.tab",
+			function (e) {
+				let target = $(e.target).data("bs-target");
+				$(target)
+					.addClass("active show")
+					.siblings(".tab-pane.active")
+					.removeClass("active show");
+			}
+		);
+
+		// item filter
+		$(".item_filter").each(function () {
+			var filter = $(this);
+			var filterItem = $(this).find(".items_list > .item.active").html();
+
+			filter.find(".activated").html(filterItem);
+		});
+
+		var newOptions = $(".items_list > .item");
+		newOptions.click(function () {
+			$(this).parents(".item_filter").find(".activated").html($(this).html());
+			$(this).siblings().removeClass("active");
+			$(this).addClass("active");
+		});
+
+		var aeDropdown = $(".item_filter");
+		aeDropdown.click(function () {
+			$(this).find(".filter_items").slideToggle();
+			$(this).toggleClass("open");
+		});
+	});
+
+	document.addEventListener("DOMContentLoaded", function () {
+		setTimeout(function () {
+			var tooltips = document.querySelectorAll(".stTooltip");
+
+			tooltips.forEach(function (tooltip) {
+				var tooltipText = tooltip.querySelector(".tooltiptext");
+
+				// tooltip bounding and calculations
+				function adjustTooltipPosition() {
+					var rect = tooltip.getBoundingClientRect();
+					var tooltipWidth = tooltipText.offsetWidth;
+
+					var spaceLeft = rect.left;
+					var spaceRight = window.innerWidth - rect.right;
+
+					tooltipText.style.left = "0";
+					tooltipText.style.right = "auto";
+					tooltipText.style.transform = "translateX(0)";
+
+					if (spaceRight < tooltipWidth / 2) {
+						tooltipText.style.left = "auto";
+						tooltipText.style.right = "0";
+						tooltipText.style.transform = "translateX(0)";
+					}
+
+					if (spaceLeft < tooltipWidth / 2) {
+						tooltipText.style.left = "0";
+						tooltipText.style.transform = "translateX(0)";
+					}
+
+					// if (rect.top < tooltipText.offsetHeight) {
+					// 	tooltipText.style.top = "100%";
+					// 	tooltipText.style.bottom = "auto";
+					// } else {
+					// 	tooltipText.style.bottom = "100%";
+					// 	tooltipText.style.top = "auto";
+					// }
+				}
+
+				// call adjustTooltipPosition initially
+				adjustTooltipPosition();
+
+				// call adjustTooltipPosition on window resize
+				window.addEventListener("resize", adjustTooltipPosition);
+			});
+		}, 100); // delay on bounding in ms
+	});
 })(jQuery);

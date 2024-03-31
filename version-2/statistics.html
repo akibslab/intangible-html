@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+
+  <!-- Site Title -->
+  <title>IntangibleSpring</title>
+
+  <!-- Favicon -->
+  <link rel="website icon" type="svg" href="assets/img/icon.svg" />
+
+  <!-- CSS	   
+  ============================================ -->
+  <!-- Bootstrap.css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!-- fontawesome.css -->
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Responsive.css -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+</head>
+
+<body>
+  <main class="site-content">
+
+    <!-- start: Statistics -->
+    <div class="statistics_page">
+      <!-- page header -->
+      <div class="page_header">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="page_header_inner">
+                <h1 class="page_title">Statistics</h1>
+
+                <ul class="nav-pills statistics_tab" role="tablist" id="statisticsTab">
+                  <li class="tab_item active" data-bs-toggle="pill" data-bs-target="#statisticTab1, #statisticTab11"
+                    role="tab" aria-selected="true">
+                    Project Records
+                  </li>
+                  <li class="tab_item" data-bs-toggle="pill" role="tab" data-bs-target="#statisticTab2, #statisticTab22"
+                    aria-selected="false">
+                    Industry Overview
+                  </li>
+                </ul>
+                <div class="tab-content statistics_tab_content text-center">
+                  <div class="tab-pane fade show active" id="statisticTab1" role="tabpanel">
+                    <ul class="st_checkboxes">
+                      <li class="st_checkbox active">ALL</li>
+                      <li class="st_checkbox">ACCEPTED</li>
+                      <li class="st_checkbox">Rejected</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="statisticTab2" role="tabpanel">
+                    <div class="st_filters">
+                      <div class="item_filter">
+                        <span class="activated"></span>
+
+                        <div class="filter_items">
+                          <ul class="items_list">
+                            <li class="item active">Industry</li>
+                            <li class="item">Industry 01</li>
+                            <li class="item">Industry 02</li>
+                            <li class="item">Industry 03</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="item_filter">
+                        <span class="activated"></span>
+
+                        <div class="filter_items">
+                          <ul class="items_list">
+                            <li class="item active">Type of IP</li>
+                            <li class="item">IP Type 01</li>
+                            <li class="item">IP Type 02</li>
+                            <li class="item">IP Type 03</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="item_filter">
+                        <span class="activated"></span>
+
+                        <div class="filter_items">
+                          <ul class="items_list">
+                            <li class="item">This Week</li>
+                            <li class="item">This Month</li>
+                            <li class="item">This Year</li>
+                            <li class="item">Last Year</li>
+                            <li class="item active">All Time: 1998-2024</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page content -->
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="statisticTab11" role="tabpanel">
+          <!-- statistics settings -->
+          <div class="statistics_settings">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="statistics_settings_inner">
+                    <div class="settings_item">
+                      <div class="title">Royalty Rate:
+                        <span class="stTooltip">
+                          <img src="./assets/img/icons/info.svg" alt="">
+                          <div class="tooltiptext">
+                            <h4 class="title">Royalty Rate:</h4>
+                            <div class="desc">
+                              <p>John Tukey’s method considers observation Y an Outlier if:</p>
+                              <p>Y < (Q1 - 1.5 IQR) or Y> (Q3 + 1.5 IQR), where Q1 = lower quartile, Q3 = upper
+                                  quartile, and IQR = (Q3-Q1) is the interquartile range. Outliers distort the average
+                                  and standard deviation and make these statistics unreliable.</p>
+                              <p>John Tukey, Explorator
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+
+                      <div class="radioboxes ">
+                        <div class="radiobox_group">
+                          <input type="radio" name="radio" id="highest" checked>
+                          <label for="highest">Highest</label>
+                        </div>
+                        <div class="radiobox_group">
+                          <input type="radio" name="radio" id="avg">
+                          <label for="avg">AVG</label>
+                        </div>
+                        <div class="radiobox_group">
+                          <input type="radio" name="radio" id="lowest">
+                          <label for="lowest">LOWEST</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="settings_item">
+                      <div class="title">Royalty Base:
+                        <span class="stTooltip">
+                          <img src="./assets/img/icons/info.svg" alt="">
+                          <div class="tooltiptext">
+                            <h4 class="title">Royalty Base:</h4>
+                            <div class="desc">
+                              <p>John Tukey’s method considers observation Y an Outlier if:</p>
+                              <p>Y < (Q1 - 1.5 IQR) or Y> (Q3 + 1.5 IQR), where Q1 = lower quartile, Q3 = upper
+                                  quartile, and IQR = (Q3-Q1) is the interquartile range. Outliers distort the average
+                                  and standard deviation and make these statistics unreliable.</p>
+                              <p>John Tukey, Explorator
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+
+                      <div class="item_filter royalty_base_filter">
+                        <span class="activated"></span>
+
+                        <div class="filter_items">
+                          <ul class="items_list">
+                            <li class="item active">Net Sales</li>
+                            <li class="item">Total Sales</li>
+                            <li class="item">Net Sales</li>
+                            <li class="item">Total Sales</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="settings_item">
+                      <div class="title">Outlier Filter:
+                        <span class="stTooltip">
+                          <img src="./assets/img/icons/info.svg" alt="">
+                          <div class="tooltiptext">
+                            <h4 class="title">Outlier Filter:</h4>
+                            <div class="desc">
+                              <p>John Tukey’s method considers observation Y an Outlier if:</p>
+                              <p>Y < (Q1 - 1.5 IQR) or Y> (Q3 + 1.5 IQR), where Q1 = lower quartile, Q3 = upper
+                                  quartile, and IQR = (Q3-Q1) is the interquartile range. Outliers distort the average
+                                  and standard deviation and make these statistics unreliable.</p>
+                              <p>John Tukey, Explorator
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+
+                      <label class='toggle_switcher'>
+                        <input type='checkbox' />
+                        <span class='back'>
+                          <span class='toggle'></span>
+                          <span class='label on'>ON</span>
+                          <span class='label off'>OFF</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="statisticTab22" role="tabpanel">b2</div>
+      </div>
+    </div>
+    <!-- end: Statistics -->
+
+  </main>
+
+  <!-- JS
+    ============================================ -->
+  <!-- Jquery js -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- NiceSelect -->
+  <script src="assets/js/nice-select.js"></script>
+
+  <!-- Main -->
+  <script src="assets/js/main.js"></script>
+</body>
