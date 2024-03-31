@@ -514,7 +514,7 @@
 	width: 100%;
 	position: relative;
 	transition: background 1s;
-	background-color: var(--color-white);
+	/* background-color: var(--color-white); */
 	border-radius: 6px;
 }
 .item_filter:before {
@@ -564,13 +564,17 @@
 }
 
 .item_filter > .filter_items {
+	position: absolute;
+	top: 100%;
+	margin-top: 4px;
 	width: 100%;
-	margin-top: 0px;
 	background-color: var(--color-white);
-	border-radius: 0 0 6px 6px;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
 	overflow: hidden;
 	display: none;
 	padding-top: 5px;
+	z-index: 9;
 }
 .filter_items .items_list {
 	list-style: none;
