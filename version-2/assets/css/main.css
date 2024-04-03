@@ -856,4 +856,62 @@
 .toggle_switcher input[type="checkbox"]:checked + .back .label.off {
 	color: var(--color-white);
 }
+/* statistics charts */
+.statistics_charts {
+	padding-top: 30px;
+}
+.statistics_charts .statistics_charts_inner {
+	max-width: 815px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.statistics_charts_inner .heading {
+	font-family: "Inter";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: left;
+	color: var(--color-primary-blue);
+	margin-bottom: 35px;
+}
+.statistics_charts_inner .heading .count {
+	color: var(--color-black);
+	margin-left: 5px;
+}
+.statistics_charts_inner .chart_item {
+}
+.statistics_charts_inner .chart_item .chart_title {
+	font-family: "Inter";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.1;
+	text-align: left;
+	color: var(--color-primary);
+	margin-bottom: 18px;
+}
+.statistics_charts_inner .chart_item .chart_content {
+	background-color: #fbfbfb;
+	border-radius: 6px;
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* color chart */
+.chart_item .color_chart {
+	overflow: hidden;
+	width: 120px;
+	height: 150px;
+	/* animation: expand 1.5s ease forwards; */
+}
+.chart_item .color_chart .block {
+	display: block;
+	width: 100%;
+	float: left;
+	background-color: #334d5c;
+	position: relative;
+	overflow: hidden;
+	opacity: 1;
+	transition: opacity, 0.3s ease;
+	cursor: pointer;
+}
 /* end: Statistics CSS */

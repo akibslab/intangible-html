@@ -215,4 +215,10 @@
 			});
 		}, 100); // delay on bounding in ms
 	});
+
+	// chart
+	$(".color_chart .value").each(function () {
+		var text = $(this).text();
+		$(this).parent().css("height", text);
+	});
 })(jQuery);
