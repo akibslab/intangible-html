@@ -31,10 +31,13 @@
   <!-- Responsive.css -->
   <link rel="stylesheet" href="assets/css/responsive.css" />
 
+  <!-- chart loader -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 </head>
 
 <body>
-  <main class="site-content">
+  <main class="site-content overflow-hidden">
 
     <!-- start: Statistics -->
     <div class="statistics_page">
@@ -227,27 +230,112 @@
                   <div class="statistics_charts_inner">
                     <div class="heading">Records: <span class="count">273</span></div>
 
+                    <div class="chart_item table_chart">
+                      <div class="chart_title">Statistical Distribution of Royalty Rates</div>
+                      <div class="chart_content">
+                        <div class="table_chart">
+                          <table class="table-responsive">
+                            <thead class="table">
+                              <tr>
+                                <th scope="col"><span>Records</span></th>
+                                <th scope="col"><span>Min</span></th>
+                                <th scope="col"><span class="bg">Q1</span></th>
+                                <th scope="col"><span class="bg">Median</span></th>
+                                <th scope="col"><span class="bg">Q3</span></th>
+                                <th scope="col"><span>Max</span></th>
+                                <th scope="col"><span>Average</span></th>
+                                <th scope="col"><span>Trimean</span></th>
+                                <th scope="col"><span>Standard Deviation</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span>273</span></td>
+                                <td><span>0.5%</span></td>
+                                <td><span class="bg">6%</span></td>
+                                <td><span class="bg">5%</span></td>
+                                <td><span class="bg">3%</span></td>
+                                <td><span>11%</span></td>
+                                <td><span>4.95%</span></td>
+                                <td><span>4.95%</span></td>
+                                <td><span>2.11%</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="chart_item">
                       <div class="chart_title">Overview of IP Types: Exploring Variations Across Categories</div>
                       <div class="chart_content">
-                        <div class="verticle_color_char">
+                        <div class="vertical_color_chart">
                           <div class="color_chart">
+                            <div class="chart_percent">
+                              <span>100%</span>
+                              <span>80%</span>
+                              <span>60%</span>
+                              <span>40%</span>
+                              <span>20%</span>
+                              <span>0%</span>
+                            </div>
                             <span class="block" title="Asset Purchase">
-                              <span class="value">13%</span>
-                            </span>
-                            <span class="block" title="Manufacturing Intangibles">
-                              <span class="value">8%</span>
-                            </span>
-                            <span class="block" title="Marketing Intangibles">
-                              <span class="value">2%</span>
-                            </span>
-                            <span class="block" title="Software">
                               <span class="value">17%</span>
                             </span>
+                            <span class="block" title="Manufacturing Intangibles">
+                              <span class="value">23%</span>
+                            </span>
+                            <span class="block" title="Marketing Intangibles">
+                              <span class="value">17%</span>
+                            </span>
+                            <span class="block" title="Software">
+                              <span class="value">23%</span>
+                            </span>
                             <span class="block" title="Franchises">
-                              <span class="value">3%</span>
+                              <span class="value">20%</span>
                             </span>
                           </div>
+                          <div class="chart_value">
+                            <ul>
+                              <li>Asset Purchase</li>
+                              <li>Manufacturing Intangibles</li>
+                              <li>Marketing Intangibles</li>
+                              <li>Software</li>
+                              <li>Franchises</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="horizontal_bar_chart">
+                          <div id="horizontal_bar_chart"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Royalty Rate Distribution</div>
+                      <div class="chart_content">
+                        <div class="vertical_bar_chart">
+                          <div id="column_bar_chart"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Comparative Royalty Rate Distributions by Licensed Territory</div>
+                      <div class="chart_content">
+                        <div class="candlestick_chart">
+                          <div id="candlestick_bar_chart"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Royalty Rate Trends Over Time: Median vs. Historical Interquartile Range
+                      </div>
+                      <div class="chart_content">
+                        <div class="line_chart">
+                          <div id="line_dot_chart"></div>
                         </div>
                       </div>
                     </div>
@@ -258,7 +346,232 @@
           </div>
 
         </div>
-        <div class="tab-pane fade" id="statisticTab22" role="tabpanel">b2</div>
+        <div class="tab-pane fade" id="statisticTab22" role="tabpanel">
+          <!-- statistics settings -->
+          <div class="statistics_settings">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="statistics_settings_inner">
+                    <div class="settings_item">
+                      <div class="title">Royalty Rate:
+                        <span class="stTooltip">
+                          <img src="./assets/img/icons/info.svg" alt="">
+                          <div class="tooltiptext">
+                            <h4 class="title">Royalty Rate:</h4>
+                            <div class="desc">
+                              <p>John Tukey’s method considers observation Y an Outlier if:</p>
+                              <p>Y < (Q1 - 1.5 IQR) or Y> (Q3 + 1.5 IQR), where Q1 = lower quartile, Q3 = upper
+                                  quartile, and IQR = (Q3-Q1) is the interquartile range. Outliers distort the average
+                                  and standard deviation and make these statistics unreliable.</p>
+                              <p>John Tukey, Explorator
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+
+                      <div class="radioboxes ">
+                        <div class="radiobox_group">
+                          <input type="radio" name="radio" id="highest" checked>
+                          <label for="highest">Highest</label>
+                        </div>
+                        <div class="radiobox_group">
+                          <input type="radio" name="radio" id="avg">
+                          <label for="avg">AVG</label>
+                        </div>
+                        <div class="radiobox_group">
+                          <input type="radio" name="radio" id="lowest">
+                          <label for="lowest">LOWEST</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="settings_item">
+                      <div class="title">Royalty Base:
+                        <span class="stTooltip">
+                          <img src="./assets/img/icons/info.svg" alt="">
+                          <div class="tooltiptext">
+                            <h4 class="title">Royalty Base:</h4>
+                            <div class="desc">
+                              <p>John Tukey’s method considers observation Y an Outlier if:</p>
+                              <p>Y < (Q1 - 1.5 IQR) or Y> (Q3 + 1.5 IQR), where Q1 = lower quartile, Q3 = upper
+                                  quartile, and IQR = (Q3-Q1) is the interquartile range. Outliers distort the average
+                                  and standard deviation and make these statistics unreliable.</p>
+                              <p>John Tukey, Explorator
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+
+                      <div class="item_filter royalty_base_filter">
+                        <span class="activated"></span>
+
+                        <div class="filter_items">
+                          <ul class="items_list">
+                            <li class="item active">Net Sales</li>
+                            <li class="item">Total Sales</li>
+                            <li class="item">Net Sales</li>
+                            <li class="item">Total Sales</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="settings_item">
+                      <div class="title">Outlier Filter:
+                        <span class="stTooltip">
+                          <img src="./assets/img/icons/info.svg" alt="">
+                          <div class="tooltiptext">
+                            <h4 class="title">Outlier Filter:</h4>
+                            <div class="desc">
+                              <p>John Tukey’s method considers observation Y an Outlier if:</p>
+                              <p>Y < (Q1 - 1.5 IQR) or Y> (Q3 + 1.5 IQR), where Q1 = lower quartile, Q3 = upper
+                                  quartile, and IQR = (Q3-Q1) is the interquartile range. Outliers distort the average
+                                  and standard deviation and make these statistics unreliable.</p>
+                              <p>John Tukey, Explorator
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+
+                      <label class='toggle_switcher'>
+                        <input type='checkbox' />
+                        <span class='back'>
+                          <span class='toggle'></span>
+                          <span class='label on'>ON</span>
+                          <span class='label off'>OFF</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- statistics chats -->
+          <div class="statistics_charts">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="statistics_charts_inner">
+                    <div class="heading">Records: <span class="count">273</span></div>
+
+                    <div class="chart_item table_chart">
+                      <div class="chart_title">Statistical Distribution of Royalty Rates</div>
+                      <div class="chart_content">
+                        <div class="table_chart">
+                          <table class="table-responsive">
+                            <thead class="table">
+                              <tr>
+                                <th scope="col"><span>Records</span></th>
+                                <th scope="col"><span>Min</span></th>
+                                <th scope="col"><span class="bg">Q1</span></th>
+                                <th scope="col"><span class="bg">Median</span></th>
+                                <th scope="col"><span class="bg">Q3</span></th>
+                                <th scope="col"><span>Max</span></th>
+                                <th scope="col"><span>Average</span></th>
+                                <th scope="col"><span>Trimean</span></th>
+                                <th scope="col"><span>Standard Deviation</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span>273</span></td>
+                                <td><span>0.5%</span></td>
+                                <td><span class="bg">6%</span></td>
+                                <td><span class="bg">5%</span></td>
+                                <td><span class="bg">3%</span></td>
+                                <td><span>11%</span></td>
+                                <td><span>4.95%</span></td>
+                                <td><span>4.95%</span></td>
+                                <td><span>2.11%</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Overview of IP Types: Exploring Variations Across Categories</div>
+                      <div class="chart_content">
+                        <div class="vertical_color_chart">
+                          <div class="color_chart">
+                            <div class="chart_percent">
+                              <span>100%</span>
+                              <span>80%</span>
+                              <span>60%</span>
+                              <span>40%</span>
+                              <span>20%</span>
+                              <span>0%</span>
+                            </div>
+                            <span class="block" title="Asset Purchase">
+                              <span class="value">17%</span>
+                            </span>
+                            <span class="block" title="Manufacturing Intangibles">
+                              <span class="value">23%</span>
+                            </span>
+                            <span class="block" title="Marketing Intangibles">
+                              <span class="value">17%</span>
+                            </span>
+                            <span class="block" title="Software">
+                              <span class="value">23%</span>
+                            </span>
+                            <span class="block" title="Franchises">
+                              <span class="value">20%</span>
+                            </span>
+                          </div>
+                          <div class="chart_value">
+                            <ul>
+                              <li>Asset Purchase</li>
+                              <li>Manufacturing Intangibles</li>
+                              <li>Marketing Intangibles</li>
+                              <li>Software</li>
+                              <li>Franchises</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="horizontal_bar_chart">
+                          <div id="horizontal_bar_chart2"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Royalty Rate Distribution</div>
+                      <div class="chart_content">
+                        <div class="vertical_bar_chart">
+                          <div id="column_bar_chart2"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Comparative Royalty Rate Distributions by Licensed Territory</div>
+                      <div class="chart_content">
+                        <div class="candlestick_chart">
+                          <div id="candlestick_bar_chart2"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_item">
+                      <div class="chart_title">Royalty Rate Trends Over Time: Median vs. Historical Interquartile Range
+                      </div>
+                      <div class="chart_content">
+                        <div class="line_chart">
+                          <div id="line_dot_chart2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- end: Statistics -->

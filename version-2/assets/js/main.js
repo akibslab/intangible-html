@@ -221,4 +221,369 @@
 		var text = $(this).text();
 		$(this).parent().css("height", text);
 	});
+
+	// horizontal bar chart
+	google.charts.load("current", { packages: ["corechart", "bar"] });
+	google.charts.setOnLoadCallback(drawBasic);
+	google.charts.setOnLoadCallback(drawBasic2);
+
+	function drawBasic() {
+		var data = google.visualization.arrayToDataTable([
+			["Manufacturing", ""],
+			["Patent", 67],
+			["Technology", 37],
+			["Know-how", 24],
+			["Process", 3],
+		]);
+
+		var options = {
+			title: "Manufacturing  Intangibles",
+			colors: ["#2A3259"],
+			chartArea: { width: "60%" },
+			legend: { position: "none" },
+		};
+
+		var chart = new google.visualization.BarChart(
+			document.getElementById("horizontal_bar_chart")
+		);
+
+		chart.draw(data, options);
+	}
+	function drawBasic2() {
+		var data = google.visualization.arrayToDataTable([
+			["Manufacturing", ""],
+			["Patent", 67],
+			["Technology", 37],
+			["Know-how", 24],
+			["Process", 3],
+		]);
+
+		var options = {
+			title: "Manufacturing  Intangibles",
+			colors: ["#2A3259"],
+			chartArea: { width: "60%" },
+			legend: { position: "none" },
+		};
+
+		var chart = new google.visualization.BarChart(
+			document.getElementById("horizontal_bar_chart2")
+		);
+
+		chart.draw(data, options);
+	}
+
+	// column chart
+	google.charts.load("current", { packages: ["corechart", "bar"] });
+	google.charts.setOnLoadCallback(drawColumnChart);
+	google.charts.setOnLoadCallback(drawColumnChart2);
+	function drawColumnChart() {
+		var data = google.visualization.arrayToDataTable([
+			["Royalty Rates", "Records"],
+			["0.5%", 0.5],
+			["1.0%", 1.0],
+			["1.5%", 1.5],
+			["2.0%", 2.0],
+			["2.3%", 2.3],
+			["2.5%", 2.5],
+			["3.0%", 3.0],
+			["3.5%", 3.5],
+			["4.0%", 4.0],
+			["4.5%", 4.5],
+			["4.7%", 4.7],
+			["5.0%", 5.0],
+			["5.3%", 5.3],
+			["5.5%", 5.5],
+			["5.8%", 5.8],
+			["6.0%", 6.0],
+			["6.5%", 6.5],
+			["7.0%", 7.0],
+			["7.5%", 7.5],
+			["8.0%", 8.0],
+			["8.3%", 8.3],
+			["9.0%", 9.0],
+			["10.0%", 10.0],
+			["11.0%", 11.0],
+		]);
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1]);
+
+		var options = {
+			colors: ["#C5E4FF"],
+			chartArea: { width: "95%" },
+			height: 300,
+			bar: { groupWidth: "65%" },
+			legend: { position: "none" },
+
+			vAxis: {
+				title: "Number of Records",
+			},
+			hAxis: {
+				title: "Royalty Rates",
+			},
+			fontSize: 10,
+			backgroundColor: "#FBFBFB",
+		};
+		var chart = new google.visualization.ColumnChart(
+			document.getElementById("column_bar_chart")
+		);
+		chart.draw(view, options);
+	}
+	function drawColumnChart2() {
+		var data = google.visualization.arrayToDataTable([
+			["Royalty Rates", "Records"],
+			["0.5%", 0.5],
+			["1.0%", 1.0],
+			["1.5%", 1.5],
+			["2.0%", 2.0],
+			["2.3%", 2.3],
+			["2.5%", 2.5],
+			["3.0%", 3.0],
+			["3.5%", 3.5],
+			["4.0%", 4.0],
+			["4.5%", 4.5],
+			["4.7%", 4.7],
+			["5.0%", 5.0],
+			["5.3%", 5.3],
+			["5.5%", 5.5],
+			["5.8%", 5.8],
+			["6.0%", 6.0],
+			["6.5%", 6.5],
+			["7.0%", 7.0],
+			["7.5%", 7.5],
+			["8.0%", 8.0],
+			["8.3%", 8.3],
+			["9.0%", 9.0],
+			["10.0%", 10.0],
+			["11.0%", 11.0],
+		]);
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1]);
+
+		var options = {
+			colors: ["#C5E4FF"],
+			chartArea: { width: "95%" },
+			height: 300,
+			bar: { groupWidth: "65%" },
+			legend: { position: "none" },
+
+			vAxis: {
+				title: "Number of Records",
+			},
+			hAxis: {
+				title: "Royalty Rates",
+			},
+			fontSize: 10,
+			backgroundColor: "#FBFBFB",
+		};
+		var chart = new google.visualization.ColumnChart(
+			document.getElementById("column_bar_chart2")
+		);
+		chart.draw(view, options);
+	}
+
+	// candlestick chart
+	google.charts.load("current", { packages: ["corechart"] });
+	google.charts.setOnLoadCallback(candlestickChart);
+	google.charts.setOnLoadCallback(candlestickChart2);
+	function candlestickChart() {
+		var number = google.visualization.arrayToDataTable(
+			[
+				["Africa", 20, 28, 38, 45],
+				["Asia-Pacific", 31, 38, 55, 66],
+				["Europe", 50, 55, 77, 80],
+				["LATAM", 77, 77, 66, 50],
+				["Middle East", 68, 66, 22, 15],
+				["North America", 40, 50, 22, 15],
+				["Worldwide", 70, 80, 22, 15],
+				// Treat first row as data as well.
+			],
+			true
+		);
+
+		var options = {
+			legend: "none",
+			chartArea: { width: "95%" },
+			height: 300,
+			backgroundColor: "#FBFBFB",
+
+			vAxis: {
+				title: "Royalty Rates Distributions",
+			},
+			hAxis: {
+				title: "Licensed Territory",
+			},
+		};
+
+		var chart = new google.visualization.CandlestickChart(
+			document.getElementById("candlestick_bar_chart")
+		);
+
+		chart.draw(number, options);
+	}
+	function candlestickChart2() {
+		var number = google.visualization.arrayToDataTable(
+			[
+				["Africa", 20, 28, 38, 45],
+				["Asia-Pacific", 31, 38, 55, 66],
+				["Europe", 50, 55, 77, 80],
+				["LATAM", 77, 77, 66, 50],
+				["Middle East", 68, 66, 22, 15],
+				["North America", 40, 50, 22, 15],
+				["Worldwide", 70, 80, 22, 15],
+				// Treat first row as data as well.
+			],
+			true
+		);
+
+		var options = {
+			legend: "none",
+			chartArea: { width: "95%" },
+			height: 300,
+			backgroundColor: "#FBFBFB",
+
+			vAxis: {
+				title: "Royalty Rates Distributions",
+			},
+			hAxis: {
+				title: "Licensed Territory",
+			},
+		};
+
+		var chart = new google.visualization.CandlestickChart(
+			document.getElementById("candlestick_bar_chart2")
+		);
+
+		chart.draw(number, options);
+	}
+
+	// line chart
+	google.charts.load("current", { packages: ["corechart", "line"] });
+	google.charts.setOnLoadCallback(lineChart);
+	google.charts.setOnLoadCallback(lineChart2);
+	function lineChart() {
+		var data = new google.visualization.DataTable();
+		data.addColumn("number", "Year");
+		data.addColumn("number", "Percents");
+
+		data.addRows([
+			[1990, 0],
+			[1991, 5],
+			[1992, 6],
+			[1993, 11],
+			[1994, 7],
+			[1995, 3],
+			[1996, 3],
+			[1997, 4],
+			[1998, 3],
+			[1999, 6],
+			[2000, 5],
+			[2001, 5],
+			[2002, 3],
+			[2003, 5],
+			[2004, 5],
+			[2005, 5],
+			[2006, 5],
+			[2007, 6],
+			[2008, 5],
+			[2009, 5],
+			[2010, 6],
+			[2011, 5],
+			[2012, 5],
+			[2013, 5],
+			[2014, 4],
+			[2015, 7],
+			[2016, 6],
+			[2017, 7],
+			[2018, 5],
+			[2019, 10],
+			[2020, 0],
+			[2021, 5],
+			[2022, 5.5],
+			[2023, 5],
+		]);
+
+		var options = {
+			legend: "none",
+			chartArea: { width: "90%" },
+			height: 300,
+			backgroundColor: "#FBFBFB",
+
+			vAxis: {
+				title: "Royalty Rates",
+			},
+			hAxis: {
+				title: "License Year",
+			},
+		};
+
+		var chart = new google.visualization.LineChart(
+			document.getElementById("line_dot_chart")
+		);
+
+		chart.draw(data, options);
+	}
+	function lineChart2() {
+		var data = new google.visualization.DataTable();
+		data.addColumn("number", "Year");
+		data.addColumn("number", "Percents");
+
+		data.addRows([
+			[1990, 0],
+			[1991, 5],
+			[1992, 6],
+			[1993, 11],
+			[1994, 7],
+			[1995, 3],
+			[1996, 3],
+			[1997, 4],
+			[1998, 3],
+			[1999, 6],
+			[2000, 5],
+			[2001, 5],
+			[2002, 3],
+			[2003, 5],
+			[2004, 5],
+			[2005, 5],
+			[2006, 5],
+			[2007, 6],
+			[2008, 5],
+			[2009, 5],
+			[2010, 6],
+			[2011, 5],
+			[2012, 5],
+			[2013, 5],
+			[2014, 4],
+			[2015, 7],
+			[2016, 6],
+			[2017, 7],
+			[2018, 5],
+			[2019, 10],
+			[2020, 0],
+			[2021, 5],
+			[2022, 5.5],
+			[2023, 5],
+		]);
+
+		var options = {
+			legend: "none",
+			chartArea: { width: "90%" },
+			height: 300,
+			backgroundColor: "#FBFBFB",
+
+			vAxis: {
+				title: "Royalty Rates",
+			},
+			hAxis: {
+				title: "License Year",
+			},
+		};
+
+		var chart = new google.visualization.LineChart(
+			document.getElementById("line_dot_chart2")
+		);
+
+		chart.draw(data, options);
+	}
 })(jQuery);

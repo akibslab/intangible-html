@@ -11,10 +11,52 @@
 
 /* Medium devices (tablets, 768px to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.statistics_settings .statistics_settings_inner {
+		justify-content: center;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
 @media only screen and (max-width: 767px) {
+	.page_header .page_title {
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+	.statistics_tab {
+		gap: 15px;
+	}
+	.statistics_tab .tab_item {
+		font-size: 18px;
+	}
+	.statistics_tab .tab_item:not(:last-child)::after {
+		right: -7.5px;
+	}
+	.statistics_tab_content .st_checkboxes {
+		gap: 10px;
+	}
+	.st_checkbox {
+		font-size: 14px;
+		padding: 12px 20px;
+		min-width: 90px;
+	}
+	.statistics_settings .statistics_settings_inner {
+		justify-content: center;
+	}
+	.statistics_charts_inner .chart_item .chart_content {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 10px;
+	}
+	.vertical_color_chart {
+		padding: 16px;
+		overflow-x: auto;
+	}
+	.statistics_charts_inner .chart_item .chart_title {
+		line-height: 1.4;
+	}
+	.table_chart {
+		overflow-x: auto;
+	}
 }
 
 /* Small devices (large mobile) (landscape phones, 480px to 767px) */
